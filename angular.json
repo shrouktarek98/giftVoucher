@@ -28,9 +28,20 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap-grid.css",
+              "src/assets/css/bootstrap-reboot.css",
+              "src/assets/lib/bootstrap/css/bootstrap.min.css",
+              "src/assets/lib/font-awesome/css/font-awesome.css",
+              "src/assets/lib/advanced-datatable/css/demo_page.css",
+              "src/assets/lib/advanced-datatable/css/demo_table.css",
+              "src/assets/lib/advanced-datatable/css/DT_bootstrap.css",
+              "src/assets/css/style.css",
+              "src/assets/css/style-responsive.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           },
           "configurations": {
             "production": {

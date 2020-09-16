@@ -1,0 +1,22 @@
+<div class="wrapper fadeInDown" style="margin-top: 100px;">
+  <div id="formContent" style="padding-top: 50px;">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <!-- Login Form -->
+    <form [formGroup]="loginForm">
+      <div [ngClass]="{'invalid-feedback': errorMsg}" style="display: block;text-align: center;font-size: 1rem;">
+        {{errorMsg}}
+      </div>
+      <input type="email" formControlName="email" id="email" class="fadeIn second" name="email" placeholder="Email">
+      <input type="password"  formControlName="password" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In"(click)="submit()">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>

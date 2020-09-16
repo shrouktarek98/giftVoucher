@@ -1,0 +1,82 @@
+<section id="container">
+  <!--main content start-->
+  <app-toolbar></app-toolbar>
+  <app-sidebar></app-sidebar>
+  <section id="main-content">
+    <section class="wrapper">
+      <h3><i class="fa fa-angle-right"></i> Company</h3>
+      <div class="row mb">
+        <!-- page start-->
+        <div class="content-panel">
+          <div class="adv-table">
+            <div id="hidden-table-info_wrapper" class="dataTables_wrapper form-inline" role="grid">
+              <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered dataTable" id="hidden-table-info" aria-describedby="hidden-table-info_info">
+              <thead>
+                <tr role="row">
+                  <th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="" style="width: 5%;"></th>
+                  <th class="" role="columnheader" tabindex="0"  rowspan="1" colspan="1"  style="width: 10%;">Photo</th>
+                  <th class="" role="columnheader" tabindex="0"  rowspan="1" colspan="1"  style="width: 15%;">Username</th>
+                  <th class="" role="columnheader" tabindex="0"  rowspan="1" colspan="1"  style="width: 20%;">Email</th>
+                  <th class="" role="columnheader" tabindex="0"  rowspan="1" colspan="1"  style="width: 35%;">Description</th>
+                  <th class="" role="columnheader" tabindex="0"  rowspan="1" colspan="1"  style="width: 15%;">phone</th>
+                </tr>
+              </thead>
+
+              <tbody role="alert" aria-live="polite" aria-relevant="all" *ngFor="let company of companyes" >
+                <tr class="gradeA odd">
+                  <td class="center "><img src="assets/lib/advanced-datatable/images/details_open.png"></td>
+                  <td class="  sorting_1"><img style="width: 50px; height: 50px; border-radius:50%" src="{{company.picture}}"></td>
+                  <td class=" ">{{company.username}}</td>
+                  <td class="hidden-phone ">{{company.email}}</td>
+                  <td class="center hidden-phone ">{{company.description}}</td>
+                  <td class="center hidden-phone ">{{company.phone}}</td>
+                </tr>
+                <tr>
+                  <td class="details" colspan="6">
+                    <table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">
+                      <tbody>
+                        <tr *ngFor="let item of company.category" >
+                          <td>{{item.category}}</td>
+                          <td>{{item.price}}</td>
+                          <td>{{item.percentage}}%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- page end-->
+      </div>
+      <!-- /row -->
+    </section>
+    <!-- /wrapper -->
+  </section>
+  <!-- /MAIN CONTENT -->
+  <!--main content end-->
+  <!--footer start-->
+  <footer class="site-footer">
+    <div class="text-center">
+      <p>
+        &copy; Copyrights <strong>Dashio</strong>. All Rights Reserved
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
+      </div>
+      <a href="advanced_table.html#" class="go-top">
+        <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+  </footer>
+  <!--footer end-->
+</section>
